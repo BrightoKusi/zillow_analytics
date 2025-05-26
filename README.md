@@ -47,13 +47,10 @@ It serves both real-time and batch analytical needs by integrating with tools li
 
 ```plaintext
 zillow_analytics/
-│
-├── data_pipeline/              # Lambda and ETL scripts
-├── airflow_dags/              # Airflow DAGs for orchestration
-├── docker/                    # Docker configurations
-├── snowflake_integration/     # Snowpipe scripts and configs
-├── s3/                        # Sample input/output data
-├── visualizations/            # Quicksight and PowerBI assets
+├── dags/              # Airflow DAGs for orchestration and ETL script
+├── scrips/                    # Entry point for docker
+├── Utils/                    # sql scripts and helper functions 
+├── docker-compose.yml/     # Docker configuration file
 └── README.md                  # Project documentation
 
 To reproduce this pipeline locally or on the cloud:
