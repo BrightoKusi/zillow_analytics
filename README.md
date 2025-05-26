@@ -56,3 +56,16 @@ zillow_analytics/
 ├── visualizations/            # Quicksight and PowerBI assets
 └── README.md                  # Project documentation
 
+To reproduce this pipeline locally or on the cloud:
+
+Clone the repository:
+git clone https://github.com/BrightoKusi/zillow_analytics.git
+
+Build and start services:
+docker-compose up --build
+
+Configure environment variables:
+AWS credentials
+Redshift and Snowflake credentials
+Airflow environment configs
+Deploy DAGs to Airflow and trigger manually or via schedule.
